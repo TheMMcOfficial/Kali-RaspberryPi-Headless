@@ -2,6 +2,7 @@
 
 ### first things first change the default password
 ssh to your pi vi this command:
+
 ```ssh kali@IP_OF_YOUR_PI```
 
 the default password is "kali"
@@ -9,6 +10,7 @@ the default password is "kali"
 then type ```passwd``` to change it
 
 To remove the default SSh key do this:
+
 ```sudo dpkg-reconfigure openssh-server```
 
 ### Update your PI
