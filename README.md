@@ -21,7 +21,7 @@ sudo apt full-upgrade
 sudo apt autoremove
 ```
 
-### Install zsh completary 
+### Install ZSH completary 
 ```sudo apt install zsh-syntax-highlighting autojump zsh-autosuggestions```
 
 ### Install if it's not there VNC
