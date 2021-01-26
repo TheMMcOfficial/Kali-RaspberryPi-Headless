@@ -9,7 +9,7 @@ the default password is "kali"
 
 then type ```passwd``` to change it
 
-To remove the default SSh key do this:
+To remove the default SSH key do this:
 
 ```sudo dpkg-reconfigure openssh-server```
 
