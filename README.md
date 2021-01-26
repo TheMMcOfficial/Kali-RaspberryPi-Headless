@@ -1,5 +1,12 @@
 # Kali-RaspberryPi-Headless
 
+You can find the image here: https://www.offensive-security.com/kali-linux-arm-images/
+
+I suggest you to use Etcher to flash it since it is multi OS (Windows/Linux\MacOS): https://www.balena.io/etcher/
+
+Flash the image to your SD card and boot up your Pi.
+
+
 ### first things first change the default password
 ssh to your pi vi this command:
 
@@ -13,7 +20,7 @@ To remove the default SSH key do this:
 
 ```sudo dpkg-reconfigure openssh-server```
 
-### Update your PI
+### Update your Pi
 ```
 sudo apt update
 sudo apt upgrade -y
