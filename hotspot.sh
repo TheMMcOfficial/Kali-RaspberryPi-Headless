@@ -7,19 +7,13 @@ if [ "$EUID" -ne 0 ]
 	exit
 fi
 
-if [[ $# -lt 1 ]]; 
-	then echo "You need to pass a password!"
-	echo "Usage:"
-	echo "sudo $0 yourChosenPassword [apName]"
-	exit
-fi
+echo "This script will create a wifi AP with your Raspberry Pi"
 
-APPASS="$1"
-APSSID="rPi3"
+echo "Please enter the SSID of the wifi"
+read APSSID
 
-if [[ $# -eq 2 ]]; then
-	APSSID=$2
-fi
+echo "Please enter the Password of the wifi"
+read APPASS
 
 apt-get remove --purge hostapd -yqq
 apt-get update -yqq
