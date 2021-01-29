@@ -15,6 +15,12 @@ read APSSID
 echo "Please enter the Password of the wifi"
 read APPASS
 
+if [ -z "$APSSID" ]
+then
+      echo "You must enter an SSID"
+      exit
+fi
+
 apt-get remove --purge hostapd -yqq
 apt-get update -yqq
 apt-get upgrade -yqq
